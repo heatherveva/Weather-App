@@ -1,5 +1,12 @@
 h1 {
-  background-color: navy;
+  background: rgb(12, 8, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 8, 80, 1) 0%,
+    rgba(25, 19, 120, 1) 50%,
+    rgba(51, 45, 149, 1) 66%,
+    rgba(82, 74, 212, 1) 80%
+  );
   justify-content: center;
   color: white;
   text-align: center;
@@ -8,8 +15,8 @@ h1 {
   padding: 2rem;
 }
 
-p {
+.searchTitleOne {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }

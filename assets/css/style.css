@@ -1,3 +1,7 @@
+.bgc-grey {
+  background-color: darkgrey;
+}
+
 h1 {
   background: rgb(12, 8, 80);
   background: linear-gradient(

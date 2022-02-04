@@ -45,7 +45,9 @@ function displayCurrentWeather(currentCityData, cityName) {
     currentCityData.wind_speed
   } MPH </div> <div> Humidity: ${
     currentCityData.humidity
-  }% <div id="uvIndex"> UV Index: ${currentCityData.uvi}`;
+  }% <div class="mb-5"> UV Index: <span class="p-1 rounded" id="uvIndex">${
+    currentCityData.uvi
+  }</span>`;
 
   let uvIndexData = currentCityData.uvi;
   let uvIndexColor = document.getElementById("uvIndex");
@@ -66,13 +68,17 @@ function displayFiveDayWeather(fiveDayCityData) {
   cityData.forEach((day) => {
     let weatherIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`;
 
-    document.querySelector("#fiveDayWeather").innerHTML += `<div> ${moment
+    document.querySelector(
+      "#fiveDayWeather"
+    ).innerHTML += `<div id="bgc-grey" class="col-sm m-1 p-2 card"><div> ${moment
       .unix(day.dt)
-      .format("MMM Do YYYY")}</div> <img src="${weatherIcon}"> <div>Temp: ${
+      .format(
+        "MMM Do YYYY"
+      )}</div> <div><img src="${weatherIcon}"></div><div>Temp: ${
       day.temp.day
     } \xB0F </div> <div>Wind: ${day.wind_speed} MPH </div> <div> Humidity: ${
       day.humidity
-    }%`;
+    }%</div></div>`;
   });
 }
 

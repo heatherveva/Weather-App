@@ -1,5 +1,7 @@
 # Homework 6 - Weather Predictor
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
 
 This weather application was built using HTML, CSS, Javascript, and Bootstrap.
